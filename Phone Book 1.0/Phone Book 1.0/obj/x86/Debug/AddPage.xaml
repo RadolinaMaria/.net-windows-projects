@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Phone_Book_1._0.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Phone_Book_1._0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--Add Page User Interface-->
+    <StackPanel Padding="50">
+        <TextBlock Text="Add" FontSize="40"/>
+      
+        <TextBlock Text="Picture" FontSize="20"/>
+        <TextBox x:ConnectionId='2' x:Name="Picture" FontSize="20"/>
+
+
+        <TextBlock Text="Name" FontSize="20"/>
+        <TextBox x:ConnectionId='3' Name="Name" FontSize="20"/>
+
+        <TextBlock Text="Phone" FontSize="20"/>
+        <TextBox x:ConnectionId='4' Name="Phone" FontSize="20"/>
+
+        <Button Content="Save" FontSize="20"
+                Margin="0 20 0 0" Padding="20 10"/>
+        
+    </StackPanel>
+</Page>
+

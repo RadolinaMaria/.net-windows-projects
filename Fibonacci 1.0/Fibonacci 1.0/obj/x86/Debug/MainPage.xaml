@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Fibonacci_1._0.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fibonacci_1._0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <!-- User Interface (UI): Fibonacci 1.0 -->
+    <StackPanel Background="Pink" Padding="50">
+
+        <!-- Title -->
+        <TextBlock Text="Fibonacci 1.0" FontSize="40" />
+
+        <!-- Limit -->
+        <TextBlock Text="Limit" Margin="0 10 0 10" FontSize="20" />
+        <TextBox x:ConnectionId='2' Name="boxLimit" FontSize="20" Text="1000" />
+        <Button x:ConnectionId='3' Content="Generate" Margin="0 10 0 10" Padding="20 10 20 10" FontSize="20"                       />
+
+        <!-- Numbers -->
+        <ListBox x:ConnectionId='4' Name="boxNumbers"  Height="400" FontSize="20" />
+
+    </StackPanel>
+</Page>
+

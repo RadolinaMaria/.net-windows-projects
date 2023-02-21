@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Clicker_Mania_1._0.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Clicker_Mania_1._0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!-- Clicker Mania 1.0 User Interface-->
+    <Grid Background="LightPink" Padding="50">
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text="Clicker Mania 1.0"
+                   FontSize="40"
+                   HorizontalAlignment="Center"/>
+
+            <TextBlock x:Name="Clicks" 
+            Text="0" 
+                       Margin="100"
+                   FontSize="100" 
+                   HorizontalAlignment="Center"/>
+
+            <Button Content="Click" 
+                FontSize="40" 
+                Padding="40 20 40 20"
+                HorizontalAlignment="Center"
+                    Click="Button_Click_Event_Handler"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
